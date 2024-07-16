@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="container flex bg-black">
+        <div id="left" class="left bg-black rounded">
+            <div class="home rounded bg-grey">
+                <div class="logo"><img class="invert" src="logo.svg" alt="spotify-Logo"></div>
+                <ul>
+                    <li class="hover"><img class="invert" src="home.svg" alt="Home">Home</li>
+                    <li class="hover"><img class="invert" src="search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library rounded bg-grey">
+                <div class="part1  col-lite">
+                    <img class="invert" src="library.svg">
+                    <h2 class="hover">Your Library</h2>
+                </div>
+                <div class="part2 ">
+                    <h2 class="playlistheading"></h2>
+                    <ul class="songdata">
+
+                    </ul>
+                </div>
+                <div class="part3 ">
+                    <ul>
+                        <li class="pointer underline">Legal</li>
+                        <li class="pointer underline">Safety and Privacy Center</li>
+                        <li class="pointer underline">Privacy Policy</li>
+                    </ul>
+                    <ul>
+                        <li class="pointer underline">Cookies</li>
+                        <li class="pointer underline">About Ads</li>
+                        <li class="pointer underline">Accessibility</li>
+                    </ul>
+                    <ul>
+                        <li class="pointer underline">Cookies</li>
+                    </ul>
+                    <button class="flex justify-center items-center pointer">
+                        <img class="invert" src="globe.svg">
+                        English
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded">
+            <div class="header flex items-center">
+                <div class="nav">
+                    <img class="invert" src="left.svg">
+                    <img class="invert" src="right.svg" alt="">
+                </div>
+                <div class="buttons">
+                    <button class=" but1 col-lite" style="background-color: transparent">Sign Up</button>
+                    <button class="but2">Log in</button>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="playlists">
+                    <h1>Spotify Playlists</h1>
+                    <div class="card-container">
+                        <div class="card" data-index="0">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000024b04e77913de1fc2a4b819df" alt="" />
+                            <h2 id="playname">Hindi</h2>
+                            <p class="col-lite">Ooo Laaa Laaa</p>
+                        </div>
+                        <div class="card" data-index="1">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377" alt="" />
+                            <h2 id="playname">English</h2>
+                            <p class="col-lite">Stay Hard....</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+
+
+
+
+
+
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002a79aa912d12b40e0f1c88f39" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002d497c6e15e12d5ff9df6e5f9" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+                        <div class="card" data-index="2">
+                            <div class="play">
+                                <img src="play.svg" />
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded" alt="" />
+                            <h2 id="playname">Dummy</h2>
+                            <p class="col-lite">these are dummy playlists...</p>
+                        </div>
+
+
+                        
+
+
+                        <div class="footer">
+                            <div class="f1 flex">
+                                <ul>
+                                    <li>Company</li>
+                                    <li class=" col-lite">About</li>
+                                    <li class=" col-lite">Jobs</li>
+                                    <li class=" col-lite">For the record</li>
+                                </ul>
+                                <ul>
+                                    <li>Communities</li>
+                                    <li class=" col-lite">For Artists</li>
+                                    <li class=" col-lite">Developers</li>
+                                    <li class=" col-lite">Advertising</li>
+                                    <li class=" col-lite">Investors</li>
+                                    <li class=" col-lite">Vendors</li>
+                                </ul>
+                                <ul>
+                                    <li>Useful links</li>
+                                    <li class=" col-lite">Support</li>
+                                    <li class=" col-lite">Free mobile App</li>
+                                </ul>
+                                <ul>
+                                    <li>Spotify Plans</li>
+                                    <li class=" col-lite">Premium Individual</li>
+                                    <li class=" col-lite">Premium Duo</li>
+                                    <li class=" col-lite">Premium Family</li>
+                                    <li class=" col-lite">Premium Student</li>
+                                    <li class=" col-lite">Spotify Free</li>
+                                </ul>
+                                <div class="contacts">
+                                    <img class="pointer" src="insta.svg" alt="">
+                                    <img class="pointer" src="twitter.svg" alt="">
+                                    <img class="pointer" src="facebook.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="f2 col-lite">
+                                <p>© 2024 Spotify AB</p>
+                            </div>
+                        </div>
+
+                    </div>
+                        
+                </div>
+                <div class="playbar rounded">
+                    <audio class="audioplayer"></audio>
+                    <div class="line1">
+                        <div class="songinfo">
+                            <div class="songtitle">Song Title</div>
+                        </div>
+                        <div class="controls">
+                            <img id="prev" class="invert" src="prev.svg" alt="prev btn">
+                            <img id="play" class="invert" src="player.svg" alt="play/pause btn">
+                            <img id="next" class="invert" src="next.svg" alt="next btn">
+                        </div>
+                        <p><span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                        </p>
+                    </div>
+                    <div class="line2">
+                        <input type="range" id="seekbar" value="0" max="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

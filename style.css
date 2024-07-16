@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+    background-color: black;
+}
+
+.conatiner{
+    position: fixed;
+}
+.left{
+    width: 23vw;
+    padding: 7px;
+    position: absolute;
+}
+.right{
+    width: 77vw;
+    margin: 7px;
+    background-color: #101010;
+    margin-left: 1px;
+    position: absolute;
+    margin-left: 24vw;
+}
+.home ul li{
+    width: 24px;
+    display: flex;
+    gap: 19px;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+
+
+.home{
+    padding: 25px;
+    height: 13vh;
+    margin-bottom: 7px;
+}
+.library{
+    height: 72vh;
+    padding: 25px;
+    position: relative;
+}
+.part1{
+    display: flex;
+    gap: 17px;
+    font-size: 11px;
+    align-items: center;
+}
+.part1 img{
+    width: 24px;
+}
+
+.part3{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    position: absolute;
+    bottom: 0 ;
+}
+
+.part3 ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    padding: 7px;
+}
+.part3 ul li{
+    font-size: 10px;
+    color: #a7a7a7;
+    
+}
+.part3 button{
+    color: white;
+    font-size: 13px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 7px;
+    gap: 5px;
+    border-radius: 800px;
+    height: 30px;
+    width: 90px;
+    border: 1px solid #a7a7a7;
+    background-color: transparent;
+    margin-top: 23px;
+}
+
+.part3 button:hover{
+    border: 1px solid white;
+    height: 32px;
+    width: 92px;
+}
+
+.part3 button img{
+    width: 17px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 19px;
+    height: 57px;
+}
+.nav img{
+    width: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 239px;
+}
+
+.buttons button{
+    width: 110px;
+    height: 50px;
+    border-radius: 800px;
+    border: none;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.but1:hover{
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+.but2:hover{
+    width: 112px;
+    height: 52px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.playlists{
+    padding: 17px;
+}
+
+.card-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 7px;
+    max-height: 70vh;
+    overflow: scroll;
+}
+
+.card{
+    width: 150px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #1e1e1e;
+    position: relative;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: #2b2a2a;
+    .play img{
+        animation: playanimate 0.19s ease-in 0s normal forwards;
+    }
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.card h2{
+    font-size: 17px;
+    font-weight: normal;
+    margin: 10px 0px 10px 0px;
+}
+.card p{
+    font-size: 14px;
+    font-weight: normal;
+}
+.play img{
+    width: 50px;
+    position: absolute;
+    bottom: 91px;
+    left: 105px;
+    visibility: hidden;
+}
+
+.footer{
+    padding: 20px 20px 20px 0px;
+    width: 100%;
+}
+
+.f1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 0.5px solid #a7a7a7;;
+}
+.f1 ul li{
+    list-style: none;
+    margin: 14px;
+}
+.f2{
+    margin: 30px 0px 30px 0px;
+}
+.contacts{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.contacts img{
+    width: 50px;
+}
+
+.playbar{
+    height: 45px;
+    position:absolute;
+    width: 74.7vw;
+    background-color: rgb(31, 27, 27);
+    padding: 10px;
+}
+
+.line1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line2 input{
+    width: 100%;
+}
+
+.songtitle{
+    text-decoration:underline;
+}
+
+.part2{
+    height: 62%;
+    margin: 20px 0px 0px 0px;
+    position:relative;
+    overflow: scroll;
+    border-radius: 10px;
+    background-color: #262525;
+}
+.part2 h2{
+    margin: 10px;
+}
+.part2 ul{
+    padding-left: 17px;
+
+}
+
+#seekbar {
+    width: 100%;
+    height: 9px;
+    -webkit-appearance: none;
+    background: green;
+    border-radius: 10px;
+    appearance: none;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .15s ease-in-out;
+    margin-top: 10px;
+}
+
+#seekbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+.controls img:hover{
+    cursor: pointer;
+}
+
+.nav img:hover{
+    cursor: pointer;
+}
+
+
+.openhamburger{
+    width: 100vw;
+    height: -webkit-fill-available;
+    padding: 7px;
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+}
+
+
+@keyframes playanimate {
+    from{bottom: 86px;opacity: 0;visibility: visible;}
+    to{bottom: 91px;opacity:1;visibility: visible;}
+}
+
+@media (max-width:1000px) {
+    .left{
+        width: 23vw;
+        height: -webkit-fill-available;
+        padding: 7px;
+        position: absolute;
+        left: -100%;
+        transition: all;
+    }
+    .right{
+        width: -webkit-fill-available;
+        margin: 7px;
+        background-color: #101010;
+        margin-left: 1px;
+        position: absolute;
+        margin-left: 24vw;
+        left: -23%;
+    }
+    .playbar{
+        height: 9%;
+        position: absolute;
+        width: -webkit-fill-available;
+        background-color: rgb(31, 27, 27);
+        padding: 10px;
+        z-index: 1000;
+    }
+    .footer{
+        display: none;
+    }
+    .logo img{
+        src: "hamburger.svg";
+    }
+}
+
+@media (max-width:370px) {
+    .buttons{
+        display: none;
+    }
+}
+
+@media (max-width:280px) {
+    .left{
+        width: 100vw;
+        height: -webkit-fill-available;
+        left: 0%;
+        z-index: 1;
+        
+    }
+}
+
+@media (max-width) {
+    .playlists{
+        width: -webkit-fill-available;
+    }
+}
